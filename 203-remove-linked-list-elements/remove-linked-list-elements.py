@@ -17,9 +17,9 @@ class Solution(object):
 
         while cur:
             if cur.val == val:
-                prev.next =cur.next
+                prev.next =cur.next #skipping cur, not moving prev
             else:
-                prev = cur
+                prev = cur  #ADvancing prv keeping cur
             cur = cur.next
 
         return dummy.next
